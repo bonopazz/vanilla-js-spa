@@ -1,2 +1,6 @@
-# vanilla-js-spa
-It's a SPA written in vanilla javascript.
+reactやvue等のフレームワークを使用せずに純粋なjavascriptでSPAを作成しました。
+
+URLごとに表示するhtmlファイルを切り替えています。
+
+直接 `/home` や `/profile` にアクセスされるとhtmlページが存在しないためエラーになってしまうので、
+その場合はサーバ側の設定で `/*` へのアクセスを `/` に `200リダイレクト` するように設定してください。
